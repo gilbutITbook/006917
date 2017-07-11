@@ -12,10 +12,8 @@
 
 	wget https://github.com/gilbutITbook/006917/blob/master/download/centos7.tar.gz
 
- ## CentOS
-  - **CentOS7** 공식 사이트 : <https://www.centos.org/>
-
  ## 참고 문서 및 링크
+ - **CentOS7** 공식 사이트 : <https://www.centos.org/>
  - VirtualBox 다운로드 페이지 : <https://www.virtualbox.org/>
  - FileZilla 다운로드 페이지 : <https://filezilla-project.org/download.php>
 
