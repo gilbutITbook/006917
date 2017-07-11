@@ -1,0 +1,32 @@
+(p346)
+
+Alias /special /var/www/special
+
+<Directory "/var/www/special">
+    Options FollowSymLinks
+    Require all granted
+</Directory>
+
+(p350)
+
+<HTML>
+    <HEAD>
+        <TITLE>sleepred's 웹 페이지</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>sleepred 페이지</H1>
+        <P>샘플 페이지 테스트</P>
+    </BODY>
+</HTML>
+
+(p353)
+
+Alias /secret /var/www/secret
+
+<Directory "/var/www/secret">
+    AuthName "This directory requires user authentication."
+    AuthType Basic
+    Require valid-user
+    AuthUserFile /etc/httpd/conf/pwd-file
+    AuthGroupFile /dev/null
+</Directory>

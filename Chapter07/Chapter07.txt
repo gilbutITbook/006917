@@ -1,0 +1,10 @@
+(p246)
+
+[share]
+    comment = Share Direcory
+    path = /var/samba/share
+    browseable = yes
+    writable = yes
+    valid users = <사용자명>
+    create mask = 0777
+    directory mask = 0777

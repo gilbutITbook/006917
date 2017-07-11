@@ -1,0 +1,16 @@
+(p419)
+
+su
+cd /usr/share/squirrelmail
+fi nd . -name '*.php' -print | xargs egrep -l 'htmlspecialchars *\([^\)]' | egrep -v 'global.php|confi gtest.php|login.php|class/|contrib/' | xargs perl -i .bak -pe 's/htmlspecialchars *\([^\)]/sq_$&/'
+
+(p420)
+
+function sq_htmlspecialchars($string) {
+    $encoding = 'iso8859-1';
+    if (function_exists('mb_internal_encoding')) {
+        $encoding = mb_internal_encoding();
+    }
+    return htmlspecialchars($string, ENT_COMPAT | ENT_HTML401, $encoding);
+}
+

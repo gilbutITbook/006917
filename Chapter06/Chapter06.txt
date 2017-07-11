@@ -1,0 +1,61 @@
+(p203)
+
+defaults
+  no rewrite
+  no mimedecode
+
+poll ipv4.mydns.jp
+  protocol pop3
+  username <MyDNS.JP의 MasterID>
+  password <MyDNS.JP의 암호>
+
+poll ipv6.mydns.jp
+  protocol pop3
+  username <MyDNS.JP의 MasterID>
+  password <MyDNS.JP의 암호>
+
+(p226)
+
+zone "<도메인>" {
+        type master;
+        file "<도메인>.db";
+};
+
+zone "<IP주소>.in-addr.arpa" {
+        type master;
+        file "<IP주소>.in-addr.arpa.db";
+};
+
+(p227)
+
+$TTL    86400
+
+@       IN	 SOA    <도메인>. root.<도메인>. (
+                    2016030101 ; Serial
+                    3h         ; Refresh
+                    1h         ; Retry
+                    1w         ; Expire
+                    1h )       ; Minimum
+
+        IN   NS     server.<도메인>.
+        IN   MX 10  server.<도메인>.
+@       IN   A      <IP 주소>
+server  IN   A      <IP 주소>
+www     IN   A      <IP 주소>
+ftp     IN   A      <IP 주소>
+mail    IN   A      <IP 주소>
+
+
+(p229)
+
+$TTL    86400
+
+@       IN	 SOA    <도메인>. root.<도메인>. (
+                    2016030101 ; Serial
+                    3h         ; Refresh
+                    1h         ; Retry
+                    1w         ; Expire
+                    1h )       ; Minimum
+
+        IN   NS     server.<도메인>.
+＜IP＞  IN   PTR    server.<도메인>.

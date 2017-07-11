@@ -1,0 +1,36 @@
+(p428)
+
+[Unit]
+Description=dropbox daemon
+After=network.target
+
+[Service]
+Type = forking
+Restart = always
+ExecStart = /home/<사용자명>/bin/dropbox.py start
+ExecStop = /home/<사용자명>/bin/dropbox.py stop
+User = <사용자명>
+Group = <그룹명>
+
+[Install]
+WantedBy = multi-user.target
+
+(p430)
+
+su
+cd /etc/yum.repos.d
+wget -O owncloud.repo http://download.opensuse.org/repositories/isv:/ownCloud:/community/CentOS_7/isv:ownCloud:community.repo
+yum repolist
+
+
+(p435)
+
+su
+cd /etc/yum.repos.d/
+wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/CentOS_7/isv:ownCloud:desktop.repo
+
+(p439)
+
+rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+

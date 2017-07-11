@@ -1,0 +1,19 @@
+(p203)
+
+defaults
+  no rewrite
+  no mimedecode
+
+poll ipv4.mydns.jp
+  protocol pop3
+  username ＜MyDNS.JP의 MasterID＞
+  password ＜MyDNS.JP의 암호＞
+
+poll ipv6.mydns.jp
+  protocol pop3
+  username ＜MyDNS.JP의 MasterID＞
+  password ＜MyDNS.JP의 암호＞
+
+(p204)
+
+*/10 * * * * /usr/bin/fetchmail --all >/dev/null 2>&1
