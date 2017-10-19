@@ -1,5 +1,5 @@
 
-**CentOS 7 예비학교** :: [설정 파일 다운로드](#config) | [정오표](#errata)
+**CentOS 7 예비학교** :: [설정 파일 다운로드](#--설정-파일-다운로드) | [정오표](#errata)
 
 ![CentOS 7 PRESCHOOL Cover](./document/images/cover.png)
 
@@ -26,7 +26,7 @@
  - [FileZilla 다운로드 페이지](https://filezilla-project.org/download.php)
 
 
- ## <a name="#errata"> </a> 정오표 (ver 20171106 )
+ ## <a name="errata"> </a> 정오표 (ver 20171106 )
 
 | 페이지 수 | 변경 전 | 변경 후 |
 |:-------|-------:|:------:|
