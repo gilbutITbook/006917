@@ -1,20 +1,4 @@
-(p203)
-
-defaults
-  no rewrite
-  no mimedecode
-
-poll ipv4.mydns.jp
-  protocol pop3
-  username <MyDNS.JP의 MasterID>
-  password <MyDNS.JP의 암호>
-
-poll ipv6.mydns.jp
-  protocol pop3
-  username <MyDNS.JP의 MasterID>
-  password <MyDNS.JP의 암호>
-
-(p226)
+(p285) <코드 6-4> var/named/sleepred.mydns.jp.zones 파일 작성
 
 zone "<도메인>" {
         type master;
@@ -26,7 +10,7 @@ zone "<IP주소>.in-addr.arpa" {
         file "<IP주소>.in-addr.arpa.db";
 };
 
-(p227)
+(p286) <코드 6-5> var/named/sleepred.mydns.jp.db 파일 작성
 
 $TTL    86400
 
@@ -46,7 +30,7 @@ ftp     IN   A      <IP 주소>
 mail    IN   A      <IP 주소>
 
 
-(p229)
+(p287) <코드 6-7> /var/named/1.168.192.in-addr.arpa.db 파일 편집
 
 $TTL    86400
 

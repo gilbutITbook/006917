@@ -1,4 +1,4 @@
-(p460)
+(p584) <코드 15-6> /etc/postfix/master.cf 파일 편집
 
 smtp-amavis unix -     -     n     -     2     smtp
     -o smtp_data_done_timeout=1200

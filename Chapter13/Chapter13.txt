@@ -1,10 +1,10 @@
-(p419)
+(p533) 1. 터미널에서 root(관리자) 권한을 얻고 다음과 같이 실행합니다
 
 su
 cd /usr/share/squirrelmail
 fi nd . -name '*.php' -print | xargs egrep -l 'htmlspecialchars *\([^\)]' | egrep -v 'global.php|confi gtest.php|login.php|class/|contrib/' | xargs perl -i .bak -pe 's/htmlspecialchars *\([^\)]/sq_$&/'
 
-(p420)
+(p533) <코드 13-2> /usr/share/squirrelmail/functions/i18n.php 파일 편집
 
 function sq_htmlspecialchars($string) {
     $encoding = 'iso8859-1';

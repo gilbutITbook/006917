@@ -1,4 +1,4 @@
-(p312)
+(p389) <코드 10-8> etc/postfix/main.cf 파일 편집
 
 # Enable SMTP Auth
 smtpd_sasl_auth_enable = yes
@@ -6,14 +6,14 @@ smtpd_sasl_security_options = noanonymous
 broken_sasl_auth_clients = yes
 smtpd_recipient_restrictions = permit_mynetworks, permit_auth_destination, permit_sasl_authenticated, reject
 
-(p319)
+(p398) <코드 10-16> /etc/postfix/main.cf 파일 편집
 
 smtpd_use_tls = yes
 smtpd_tls_cert_file = /etc/pki/tls/certs/mailserver.pem
 smtpd_tls_key_file = /etc/pki/tls/certs/mailserver.key
 smtpd_tls_session_cache_database = btree:/var/lib/postfix/smtpd_scache
 
-(p333)
+(p417) <코드 10-21> /etc/postfix/main.cf 파일 편집
 
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/isp_account

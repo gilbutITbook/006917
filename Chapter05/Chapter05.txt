@@ -1,4 +1,4 @@
-(p203)
+(p254) <코드 5-1> fetchmail 설정 파일
 
 defaults
   no rewrite
@@ -14,6 +14,6 @@ poll ipv6.mydns.jp
   username ＜MyDNS.JP의 MasterID＞
   password ＜MyDNS.JP의 암호＞
 
-(p204)
+(p255) <그림 5-48> 10분마다 업데이트하도록 작성
 
 */10 * * * * /usr/bin/fetchmail --all >/dev/null 2>&1

@@ -1,10 +1,14 @@
+
+**CentOS 7 예비학교** :: [설정 파일 다운로드](#config) | [정오표](#errata)
+
 ![CentOS 7 PRESCHOOL Cover](./document/images/cover.png)
+
 
 # CentOS 7 예비학교
 
 이 페이지는 <CentOS 7 예비학교> 에서 사용한 설정 파일 및 추가 정보를 독자에게 제공하기 위한 페이지입니다.
  
- ## 설정 파일 다운로드
+ ## <a name="#config"></a>설정 파일 다운로드
 
   - [CentOS 7 예비학교 설정 예제 다운로드](https://github.com/gilbutITbook/006917/raw/master/download/centos7.tar.gz)
 
@@ -22,7 +26,7 @@
  - [FileZilla 다운로드 페이지](https://filezilla-project.org/download.php)
 
 
- ## 정오표 (ver 20171106 )
+ ## <a name="#errata"></a>정오표 (ver 20171106 )
 
 | 페이지 수 | 변경 전 | 변경 후 |
 |:-------|-------:|:------:|

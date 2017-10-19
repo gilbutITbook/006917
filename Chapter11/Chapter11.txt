@@ -1,4 +1,4 @@
-(p346)
+(p432) <ì½”ë“œ 11-6> /etc/httpd/conf.d/special.conf íŒŒì¼ ì‘ì„±
 
 Alias /special /var/www/special
 
@@ -7,19 +7,19 @@ Alias /special /var/www/special
     Require all granted
 </Directory>
 
-(p350)
+(p436) <ì½”ë“œ 11-10> public_html/ index.html
 
 <HTML>
     <HEAD>
-        <TITLE>sleepred's À¥ ÆäÀÌÁö</TITLE>
+        <TITLE>sleepredì˜ ì›¹í˜ì´ì§€</TITLE>
     </HEAD>
     <BODY>
-        <H1>sleepred ÆäÀÌÁö</H1>
-        <P>»ùÇÃ ÆäÀÌÁö Å×½ºÆ®</P>
+        <H1>sleepred í˜ì´ì§€</H1>
+        <P>ìƒ˜í”Œ í˜ì´ì§€ í…ŒìŠ¤íŠ¸</P>
     </BODY>
 </HTML>
 
-(p353)
+(p440) <ì½”ë“œ 11-12> /etc/httpd/conf.d/secret.conf íŒŒì¼ í¸ì§‘
 
 Alias /secret /var/www/secret
 

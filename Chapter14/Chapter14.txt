@@ -1,4 +1,4 @@
-(p428)
+(p544)
 
 [Unit]
 Description=dropbox daemon
@@ -7,29 +7,29 @@ After=network.target
 [Service]
 Type = forking
 Restart = always
-ExecStart = /home/<����ڸ�>/bin/dropbox.py start
-ExecStop = /home/<����ڸ�>/bin/dropbox.py stop
-User = <����ڸ�>
-Group = <�׷��>
+ExecStart = /home/<사용자명>/bin/dropbox.py start
+ExecStop = /home/<사용자명>/bin/dropbox.py stop
+User = <사용자명>
+Group = <그룹명>
 
 [Install]
 WantedBy = multi-user.target
 
-(p430)
+(p546) 1. ownCloud 패키지를 배포하는 저장소(repository)를 추가합니다.
 
 su
 cd /etc/yum.repos.d
-wget -O owncloud.repo http://download.opensuse.org/repositories/isv:/ownCloud:/community/CentOS_7/isv:ownCloud:community.repo
+wget -O owncloud.repo http://download.owncloud.org/download/repositories/9.1.6/CentOS_7/ce:9.1.repo
 yum repolist
 
 
-(p435)
+(p553) 1. 터미널을 열고 ownCloud 클라이언트를 배포할 저장소를 설정합니다.
 
 su
 cd /etc/yum.repos.d/
-wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/CentOS_7/isv:ownCloud:desktop.repo
+wget -O owncloud.repo http://download.opensuse.org/repositories/isv:/ownCloud:/community/CentOS_7/isv:ownCloud:community.repo
 
-(p439)
+(p558) 3. rpm 명령어를 사용하여 NUX Dextop 저장소와 암호키를 설치합니다.
 
 rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
 rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
