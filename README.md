@@ -1,5 +1,5 @@
 
-**CentOS 7 예비학교** :: [설정 파일 다운로드](#--설정-파일-다운로드) | [정오표](#--정오표-ver-20171106-)
+**CentOS 7 예비학교** :: [설정 파일 다운로드](#설정-파일-다운로드) | [정오표](#정오표)
 
 ![CentOS 7 PRESCHOOL Cover](./document/images/cover.png)
 
@@ -26,12 +26,13 @@
  - [FileZilla 다운로드 페이지](https://filezilla-project.org/download.php)
 
 
- ## 정오표 (ver 20171106 )
+ ## 정오표
 
 | 페이지 수 | 변경 전 | 변경 후 |
 |:-------|-------:|:------:|
 |   p246    |   before    |  after    |
 
+ (ver 20171106 )
 <br>
 <br>
 <br>
